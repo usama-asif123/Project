@@ -1,0 +1,20 @@
+body{
+margin:0px;
+color:white;
+font-size:20px;
+
+;}
+html{
+    background-image: url("clock.jpg");
+ 
+  
+}
+h4{
+	
+}
+.form {
+    margin: 119px auto;
+    width: 1000px;
+    padding: 30px 25px;
+    background-color: white;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<nav>
+     <a href="dashboard.php" > Dashboard</a>
+      <a href="dropdown.html">Generate </a>
+      <a href="teachernames.php">Subject allocation</a>
+      <a href="UserName.html">University detail</a>
+      <a href="viewteachernames.php">Display teacher table </a>
+      <a href="view.php">Display</a>
+      
+    </nav>
+<style>
+  body{
+    background-color: orange;
+
+  }
+nav{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  height: 10%;
+  width:100%;
+  
+  }
+nav a{
+  text-decoration:none;
+  text-transform:uppercase;
+  color:#000;
+  font-weight:900;
+  font-size:17px;
+  position:relative;
+}
+nav a: first-child { 
+  color:#4458dc;
+}
+nav a:before{
+  content:"";
+  position:absolute;
+  top:110%;
+  left:0;
+  width:0;
+  height:2px;
+  border-bottom:2px solid #4458dc;
+  transition:all 0.4s linear;
+}
+nav a:hover: before {
+  width:100%;
+  
+}
+
+</style>
+
+
+
+
+<html>
+<head>
+     <link rel="stylesheet" href="">
+    <meta charset="utf-8">
+    
+  
+    
+  </head>
+<body>
+      <div class="jumbotron">
+     <h1 align="center"> Enter Details</h1>
+      <form action="view.php" method="post" align="center">
+
+              <label>University</label>
+               <input type="text" name="university">
+               <br>
+               <label>Department</label>
+               <input type="text" name="department">
+               <br>
+              <label> Semester</label>
+               <input type="text" name="semester">
+               <br>
+
+        <input type="submit" name="submit" value="Submit" class="btn btn-primary" />
+        
+      </form>
+     </div>
+<style type="text/css">
+  label{
+  width : 100px;
+  display:inline-block;
+  color:black;
+}
+</style>
+
+
+</body>
+
+               </html>
